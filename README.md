@@ -8,7 +8,8 @@ Install `ml` extension
 az extension add -n ml
 ```
 
-## Create AML workspace [Reference](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?tabs=public)
+## Create AML workspace  
+[Reference](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?tabs=public)
 ```bash
 az login
 az account set --name Resource_Group
@@ -24,7 +25,8 @@ az group create -n $GROUP -l $LOCATION
 az ml workspace create -n $WORKSPACE -g $GROUP -l $LOCATION
 ```
 
-## Build the docker environment [Reference](https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments)
+## Build the docker environment  
+[Reference](https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments)
 ```bash
 cd environment
 az ml environment create --file pytorch_env.yml
