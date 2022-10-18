@@ -24,7 +24,7 @@ az group create -n $GROUP -l $LOCATION
 az ml workspace create -n $WORKSPACE -g $GROUP -l $LOCATION
 ```
 
-## Build the docker environment
+## Build the docker environment [Reference](https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments)
 ```bash
 cd environment
 az ml environment create --file pytorch_env.yml
