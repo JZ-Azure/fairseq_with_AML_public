@@ -28,7 +28,7 @@ try:
     print('Found existing compute target.')
 except ComputeTargetException:
     print('Creating a new compute target...')
-    compute_config = AmlCompute.provisioning_configuration(vm_size='Standard_ND96amsr_A100_v4', min_nodes=32, max_nodes=32)
+    compute_config = AmlCompute.provisioning_configuration(vm_size='Standard_ND96amsr_A100_v4', min_nodes=0, max_nodes=2)
     
     # create the cluster
     compute_target = ComputeTarget.create(ws, cluster_name, compute_config)
